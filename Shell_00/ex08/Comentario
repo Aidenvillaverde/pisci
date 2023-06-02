@@ -1,0 +1,9 @@
+find . \( -name "*~" -o -name "#*#" \) -type f -print -delete
+
+find		-> comando para buscar
+.		-> el . indica que buscaremos apartir de todo lo que tenemos por debajo
+-name "nombre"	-> filta la busqueda por un nombre determinqado (el * indica que cuelquier caracter))
+-o		-> permite usar una segunda opcion de busqueda
+-type		-> filta el tipo de elementos que deseamos buscar (f -> ficheros)
+-print		-> nos mostrara los ficheros encontrados con las opciones anteriores
+-delete		-> borrara todos los archivos mostrados
